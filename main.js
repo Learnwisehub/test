@@ -221,7 +221,7 @@ class ClientAPI {
             return await this.makeRequest(url, method, data, options);
             // return { status: error.status, success: false, error: errorMessage, data: null };
           } else if (error.status == 400) {
-            // this.log(`Invalid request for ${url}, maybe have new update from server | contact: https://t.me/airdropscriptfa to get new update!`, "error");
+            // this.log(`Invalid request for ${url}, maybe have new update from server | contact: https://t.me/yetidao to get new update!`, "error");
             return { success: false, status: error.status, error: errorMessage, data: null };
           } else if (error.status == 429) {
             this.log(`Rate limit ${JSON.stringify(errorMessage)}, waiting 60s to retries`, "warning");
